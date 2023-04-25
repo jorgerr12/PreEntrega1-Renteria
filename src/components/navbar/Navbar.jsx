@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CartWidget from '../cartWidget/CartWidget';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,9 +10,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import LocalMallIcon from '@mui/icons-material/LocalMall';
 import AdbIcon from '@mui/icons-material/Adb';
-import { Badge } from '@mui/material';
+
 
 
 const pages = ['Tecnologia', 'Seguridad', 'Networking', 'Software'];
@@ -125,13 +125,7 @@ const Navbar = () => {
                             </Button>
                         ))}
                     </Box>
-                    <Box>
-                        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-                            <Badge badgeContent={4} color="error">
-                                <LocalMallIcon />
-                            </Badge>
-                        </IconButton>
-                    </Box>
+                   <CartWidget/>
                 </Toolbar>
             </Container>
         </AppBar>
