@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 const ItemCard = ({ item }) => {
 
     return (
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
             <Card sx={{ maxWidth: 345 }}>
                 <CardActionArea>
-                    <CardMedia
+                    <CardMedia width="100%"
                         component="img"
                         height="320px"
                         image={item.img}
