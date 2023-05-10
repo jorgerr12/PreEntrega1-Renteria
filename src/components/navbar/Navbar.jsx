@@ -11,10 +11,15 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
 
 
-const pages = ['Tecnologia', 'Seguridad', 'Networking', 'Software'];
+const pages = [
+    { nombre: 'Computo', link: "category/computo" },
+    { nombre: 'Celulares', link: "category/celulares" },
+    { nombre: 'Networking', link: "category/networking" },
+    { nombre: 'Software', link: "category/software" }];
 
 
 const Navbar = () => {
@@ -38,7 +43,7 @@ const Navbar = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="xl">
+            <Container >
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
@@ -89,8 +94,8 @@ const Navbar = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                <MenuItem key={page.nombre} onClick={handleCloseNavMenu}>
+                                    <Typography textAlign="center">{page.nombre}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -115,17 +120,21 @@ const Navbar = () => {
                         LOGO
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
+                        {pages.map(({nombre,link}) => (
+                            <Link style={{textDecoration:"none"}} key={link} to={link}>
                             <Button
-                                key={page}
+                                key={nombre}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
-                                {page}
+                                {nombre}
                             </Button>
+                            </Link>
+                            
+
                         ))}
                     </Box>
-                   <CartWidget/>
+                    <CartWidget />
                 </Toolbar>
             </Container>
         </AppBar>

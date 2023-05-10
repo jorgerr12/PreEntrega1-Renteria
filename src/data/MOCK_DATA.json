@@ -1,0 +1,165 @@
+[{
+    "id": 1,
+    "nombre": "Laptop Lenovo IdeaPad 5, 15.6",
+    "descripcion": "Laptop Lenovo IdeaPad 5, 15.6 FHD, AMD Ryzen 7 5700U 1.80 / 4.30GHz, 16GB DDR4-3200MHz. HDD 1TB SATA 5400rpm + 256GB SSD M.2 2242 NVMe, Video Integrado AMD Radeon Graphics, Audio HD - Stereo Speakers 2W x2 / Dolby Audio, Wireless LAN 802.11ac (2x2) + Bluetooth 5.0, Camara Web 720p con obturador de Privacidad + Microfono 2x Array, Teclado Non-Backlit, Bateria de Polimero de Litio 45Wh, Color Graphite Grey, Dimensiones: (Ancho x Profundidad x Altura): 35.60 cm x 23.30 cm x 1.99 cm, Peso: 1.66 kg.",
+    "precio": 2950.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/8/1/81597fdbd3e4a9b22a4527bac58cbbec_15.jpg",
+    "stock": 19,
+    "category": "computo"
+  },
+  {
+    "id": 2,
+    "nombre": "Notebook Lenovo ThinkPad L15 Gen2 15.6",
+    "descripcion": "Notebook Lenovo ThinkPad L15 Gen2 15.6 HD TN Core i7-1165G7 2.8/4.7GHz 8GB DDR4-3200MHz 512GB SSD M.2 2242 PCIe 3.0x4 NVMe, Video NVIDIA GeForce MX450 2GB GDDR6, Audio HD / Realtek ALC3287 Codec / Stereo Speakers 2W x2 Dolby Audio Premium, Wireless LAN Mediatek MT7921 802.11ax, 2x2 + Bluetooth 5.2, Camara Web HD 720p con obturador de privacidad + Microfono 2x Array, Teclado Non-Backlit en español (LA), Bateria integrada de 45Wh, Color negro / Dimensiones: (Ancho x Profundidad x Altura): 36.65 cm x 25.00 cm x 2.10 cm / Peso: 1.98 kg.",
+    "precio": 5259.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/n/b/nblen20x4s93200.jpg",
+    "stock": 46,
+    "category": "computo"
+  },
+  {
+    "id": 3,
+    "nombre": "MON LG 31.5 GAMING 32GN50R",
+    "descripcion": "MON LG 31.5 GAMING 32GN50R",
+    "precio": 909.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/e/e/eeaf743376616d1b4ed5d230d85d5fd3_5.jpg",
+    "stock": 12,
+    "category": "computo"
+  },
+  {
+    "id": 4,
+    "nombre": "Multifuncional de tinta Epson L4260",
+    "descripcion": "Multifuncional de tinta Epson L4260, USB de alta velocidad (compatible con USB 2.0) Tecnología de impresión: Inyección de tinta Heat-Free Micro Piezo de 4 colores (CMYK) / Resolución máxima de impresión: Hasta 5760 x 1440 dpi de resolución optimizada en varios tipos de papel/ Velocidad de impresión máxima: Negro 33 ppm y color 15 ppm (borrador, A4/carta) / Tipo de escáner: Cama plana con sensor de líneas CIS de color / Resolución óptica/maximo: 1.200 x 2.400 dpi / Resolución máxima de copiado: 300 x 600 dpi / Capacidad de carga: Alimentación trasera: hasta 100 hojas (A4/LTR/Carta) / Conectividad estándar: USB de alta velocidad (compatible con USB 2.0), Wi-Fi 4 (IEEE 802.11 b/g/n) / Tensión y frecuencia nominal: AC 100-240V / 50-60Hz / Dimensiones: 37.5 x 56.7 x 25.9 cm.",
+    "precio": 962.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/b/5/b5c559b4c327813a4878765ccedcd388.jpg",
+    "stock": 50,
+    "category": "computo"
+  }
+  ,
+  {
+    "id": 5,
+    "nombre": "Computadora GAMER TEROS TE-3522G, ",
+    "descripcion": "Computadora GAMER TEROS TE-3522G, Intel Core i3-10105 3.70 GHz, 16GB DDR4(8x2), 1TB, 500GB Video Geforce 4GB GTX 1650, Chipset Intel B460,PSU 600W Bronze, Sistema Operativo Ubuntu.",
+    "precio": 5259,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/6/1/61a2ff008f539bbed760f3316db2b9cd.jpg",
+    "stock": 3224.00,
+    "category": "computo"
+  },
+  {
+    "id": 6,
+    "nombre": "All-in-One Lenovo IdeaCentre3 24IMB05 23.8",
+    "descripcion": "All-in-One Lenovo IdeaCentre3 24IMB05 23.8 FHD IPS Core i3-10100T 3.03/.8GHz 8G DDR4-2666 256GB SSD M.2 2242 PCIe NVMe, Video Integrada Intel UHD Graphics, LAN GbE (RJ-45), Wireless LAN 802.11ac (2x2) + Bluetooth 5.0, Audio HD + Parlantes (3Wx2), 3-in-1 Card Reader, Camara Web HD 720p + Microfono Mono, Teclado Lenovo Calliope USB color Negro y en Español, Mouse Lenovo Calliope USB Color Negro, Color Business Black (Negro).",
+    "precio": 1559.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/a/2/a270b733b402ef0680a81e3c6da62f80.jpg",
+    "stock": 10,
+    "category": "computo"
+  },
+  {
+    "id": 7,
+    "nombre": "Nano Adaptador USB Wireless D-Link",
+    "descripcion": "Nano Adaptador USB Wireless D-Link DWA-131, 2.4GHz, 802.11g/n, USB 2.0. Seguridad WPA / WPA2 / WPS.",
+    "precio": 30.70,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/2/3/237a3c5916aa2d4abb695c346e7df20e_1.jpg",
+    "stock": 12,
+    "category": "networking"
+  },
+  {
+    "id": 8,
+    "nombre": "Access Point TP-Link EAP115",
+    "descripcion": "Access Point TP-Link EAP115, Indoor, 2.4 GHz, 802.11 b/g/n, 3dBi, 300Mbps, PoE. 1 puerto RJ-45 LAN 10/100 Mbps, estándares Wireless 802.11 b/g/n, seguridad WEP 64/128/152-bit / WPA / WPA-PSK / WPA2 / WPA-PSK, antenas internas Omnidireccional 3 dBi.",
+    "precio": 114.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/e/9/e9c730a8a02d49f2cd4670494dba4392_6.jpg",
+    "stock": 4,
+    "category": "networking"
+  },
+  {
+    "id": 9,
+    "nombre": "LITEWAVE UNMANAGED SW LS1005G",
+    "descripcion": "LITEWAVE UNMANAGED SW LS1005G",
+    "precio": 47.60,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/c/a/ca_2.jpg",
+    "stock": 3,
+    "category": "networking"
+  },
+  {
+    "id": 10,
+    "nombre": "Switch TP-Link TL-SG1008P,",
+    "descripcion": "Switch TP-Link TL-SG1008P, 8 Puertos GbE (4 Puertos PoE : IEEE 802.3af). Capacidad de fabrica hasta 16 Gbps, tabla de dirección MAC 8K, memoria buffer de 2 Mb, adaptador de energía.",
+    "precio": 193.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/d/5/d5e4c92b44389ba3ae4b16b7ebecf351_4.jpg",
+    "stock": 6,
+    "category": "networking"
+  },
+  {
+    "id": 11,
+    "nombre": "ROUTER TL-WR820N",
+    "descripcion": "ROUTER TL-WR820N",
+    "precio": 59.50,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/7/_/7_2.jpg",
+    "stock": 5,
+    "category": "networking"
+  },
+  {
+    "id": 12,
+    "nombre": "GALAXY SAMSUNG WATCH 4 40MM",
+    "descripcion": "GALAXY SAMSUNG WATCH 4 40MM",
+    "precio": 818.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/l/_/l_1.jpg",
+    "stock": 46,
+    "category": "celulares"
+  },
+  {
+    "id": 13,
+    "nombre": "Smartphone Hyundai E475, 4.0",
+    "descripcion": "Smartphone Hyundai E475, 4.0 WVGA TN, Android 9.0, 3G, Dual Sim, Desbloqueado. Bandas 3G (850/900/1900/2100 MHz), Conectividad Wireless 802.11 b/g/n, SC7731E Quad-Core 1.3GHz Quad-Core ARM Cortex-A7, Memoria RAM 512MB, Almacenamiento interno 16GB, Conector micro-USB, conector 3.5mm, Cámara posterior 2 MP, Cámara frontal VGA, reproduce audio y video.",
+    "precio": 174.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/a/8/a8751df69d10f5bbcd8115bf53b39148_7.jpg",
+    "stock": 20,
+    "category": "celulares"
+  },
+  {
+    "id": 14,
+    "nombre": "Smartphone Advance Hollogram HL4934",
+    "descripcion": "Smartphone Advance Hollogram HL4934, 5 MultiTouch 854x480, Android 4.4, Dual SIM. Desbloqueado, conexión WiFi/Bluetooth, procesador MTK6582M Quad-Core, memoria RAM 1GB, almacenamiento interno 8GB, cámara Posterior 8 MP Flash LED, cámara frontal 1.3 MP, conector de audio 3.5mm, conector micro USB, radio FM, reproduce audio y video.",
+    "precio": 298.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/t/c/tchl4934blue_1.jpg",
+    "stock": 9,
+    "category": "celulares"
+  },
+  {
+    "id": 15,
+    "nombre": "Memoria micro-SD Kingston Canvas",
+    "descripcion": "Memoria micro-SD Kingston Canvas Select, 64GB, UHS-I Speed Class 1 (U1), con Adaptador SD Velocidad de lectura: 100MB/s, ideal para grabación de videos Full HD y almacenamiento de data.",
+    "precio": 27.80,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/7/8/7827fadb7f574d954e81597df6f1cbf2_6.jpg",
+    "stock": 13,
+    "category": "celulares"
+  },
+  {
+    "id": 16,
+    "nombre": "Kaspersky Anti-Virus / 1 dispositivo /",
+    "descripcion": "Kaspersky Anti-Virus / 1 dispositivo / 1 año La protección Esencial de Kaspersky está aquí para ayudarte a proteger todo",
+    "precio": 83.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/a/n/antivirus_3.jpg",
+    "stock": 5,
+    "category": "software"
+  },
+  {
+    "id": 17,
+    "nombre": "Licencia Microsoft Office 365 Extra File Storage",
+    "descripcion": "Licencia Microsoft Office 365 Extra File Storage, suscripción 1 año, 1 GB, MOLP, SaaS.",
+    "precio": 11.90,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/5/a/5a4-00003.jpg",
+    "stock": 46,
+    "category": "software"
+  },
+  {
+    "id": 18,
+    "nombre": "Licenciamiento Virtual (ESD) Microsoft 365 Personal",
+    "descripcion": "Es una Licencia virtual. No se entrega fisicamente",
+    "precio": 198.00,
+    "img": "https://d2ulnfq8we0v3.cloudfront.net/cdn/695858/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/7/b/7b377825bbea6c974b6bf4c1d4479f18_3.jpg",
+    "stock": 46,
+    "category": "software"
+  }
+
+]
