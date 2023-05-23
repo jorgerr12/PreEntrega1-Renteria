@@ -1,65 +1,21 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Box, Button, Card, Container, Grid, Typography, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, IconButton } from "@mui/material"
-import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+
 import { Link } from "react-router-dom"
 import { Delete } from "@mui/icons-material";
+import EmptyCart from "./emptyCart/EmptyCart";
 
 
 const Cart = () => {
 
-    const { cart, deleteItem } = useContext(CartContext)
+    const { cart, deleteItem,totalCart } = useContext(CartContext)
 
- 
+    const total = totalCart()
 
     if (cart.length === 0) {
         return (
-            <Container maxWidth="xl" sx={{ alignSelf: "center", marginTop: "50px", }}>
-                <Grid container sx={{ justifyContent: "center" }}>
-                    <Grid item xs={12} sm={10} md={10} m={3} >
-                        <Card sx={{ height: "500px", display: "grid", alignItems: "center", textAlign: "center" }}>
-                            <Box >
-                                <Box>
-                                    <ProductionQuantityLimitsIcon sx={{ fontSize: 150, color: "khaki" }} />
-                                </Box>
-                                <Typography
-                                    variant="h5"
-                                    noWrap
-                                    sx={{
-                                        mr: 2,
-                                        fontFamily: 'monospace',
-                                        fontWeight: 700,
-                                        letterSpacing: '.3rem',
-                                        textDecoration: 'none',
-                                    }}>
-                                    TU CARRITO ESTA VACIO!
-
-                                </Typography>
-
-                                <Typography variant="h5"
-                                    noWrap
-                                    sx={{
-                                        mr: 2,
-                                        fontFamily: 'monospace',
-                                        fontWeight: 700,
-                                        letterSpacing: '.3rem',
-                                        textDecoration: 'none',
-                                    }}>
-                                    AGREGA PRODUCTOS Y APROVECHA NUESTROS BAJOS PRECIOS!
-                                </Typography>
-                                <Box mt={3}>
-                                    <Link to="/" className="btn btn-primary">
-                                        <Button variant="contained" >
-                                            AGREGAR PRODUCTOS
-                                        </Button>
-
-                                    </Link>
-                                </Box>
-                            </Box>
-                        </Card>
-                    </Grid>
-                </Grid>
-            </Container>
+            <EmptyCart />
         )
     }
 
@@ -67,7 +23,7 @@ const Cart = () => {
         <Container maxWidth="xl" sx={{ alignSelf: "center", marginTop: "50px", }}>
             <Grid container sx={{ justifyContent: "center" }}>
                 <Grid item xs={12} sm={10} md={10} m={3} >
-                    <Card sx={{ minHeight: "500px", display: "grid", marginTop: 3, textAlign: "center" }}>
+                    <Card sx={{ minHeight: "300px", display: "grid", marginTop: 3, textAlign: "center" }}>
                         <Box >
                             <TableContainer>
                                 <Table>
@@ -90,7 +46,7 @@ const Cart = () => {
                                                     <TableCell>S/ {item.precio}</TableCell>
                                                     <TableCell>{item.cantidad}</TableCell>
                                                     <TableCell>S/ {item.cantidad * item.precio}</TableCell>
-                                                    <TableCell><IconButton size="large" onClick={()=> deleteItem(item.id)}>
+                                                    <TableCell><IconButton size="large" onClick={() => deleteItem(item.id)}>
                                                         <Delete />
                                                     </IconButton ></TableCell>
                                                 </TableRow>
@@ -102,9 +58,30 @@ const Cart = () => {
                                 </Table>
                             </TableContainer>
                         </Box>
+
                     </Card>
+
+                    <Grid container mt={3} sx={{ justifyContent: "end" }}>
+                        <Grid item sm={4} md={4} xs={10} >
+                            <Card>
+                                <Box p={2} textAlign="center">
+                                <Typography variant="h5" color="red">TOTAL A PAGAR: S/ {total}</Typography>
+                                <Box mt={3}>
+                                    <Link to="/" className="btn btn-primary">
+                                        <Button color="success" variant="contained" size="large" sx={{width:"80%"}} >
+                                           COMPRAR
+                                        </Button>
+
+                                    </Link>
+                                </Box>
+                                </Box>
+                            </Card>
+                        </Grid>
+
+                    </Grid>
                 </Grid>
             </Grid>
+
         </Container>
 
     )

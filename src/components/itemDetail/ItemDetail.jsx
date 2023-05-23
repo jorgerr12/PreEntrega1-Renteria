@@ -19,11 +19,11 @@ const ItemDetail = ({ item }) => {
     
     return (
         
-        <Grid container justifyContent={"center"}  spacing={3}>
+        <Grid container justifyContent={"center"}  spacing={3} bgcolor="white" minHeight="860px">
             {notification && <Notifications type="success" message={item.nombre} description="se registro con exito" />}
             <Grid item xs={12} md={5}>
                 
-                <Card>
+                <Card p="2px">
                     <CardMedia
                         component="img"
 
