@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import ProfileWidget from '../profileWidget/ProfileWidget';
 
 
 
@@ -131,6 +132,7 @@ const Navbar = () => {
                         ))}
                     </Box>
                     <CartWidget />
+                    <ProfileWidget />
                 </Toolbar>
             </Container>
         </AppBar>

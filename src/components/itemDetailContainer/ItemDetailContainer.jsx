@@ -1,8 +1,9 @@
 import { Container,CircularProgress,Box } from "@mui/material"
-import { PedirDatos } from "../../helpers/PedirDatos"
 import ItemDetail from "../itemDetail/ItemDetail"
 import { useParams,useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../firebase/config"
 const ItemDetailContainer = () => {
  
     const [producto,setProducto]= useState({})
@@ -11,16 +12,18 @@ const ItemDetailContainer = () => {
     const navigate = useNavigate()
     useEffect(()=>{
         setLoading(true)
-        PedirDatos().then((data)=>{
-            let item = data.find((item)=> item.id === Number(id))
-            if(item){
+        
+        const docRef = doc(db,"productos",id)
+        getDoc(docRef)
+            .then((doc)=>{
+                const item = {
+                    id:doc.id,
+                    ...doc.data()
+                }
                 setProducto(item)
-            }
-            else{
-                navigate(-1)
-            }
-        }).catch((err) => console.log(err))
-        .finally(()=>setLoading(false))
+            })
+            .catch(err=>console.log(err))
+            .finally(()=> setLoading(false))
     },[])
     return (
         <section>

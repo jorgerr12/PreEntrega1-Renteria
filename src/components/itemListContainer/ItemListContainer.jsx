@@ -1,8 +1,10 @@
 import { PedirDatos } from "../../helpers/PedirDatos";
 import { useEffect, useState } from "react";
 import ItemList from "../itemList/ItemList";
-import { CircularProgress, Container,Box } from "@mui/material";
-import { useParams,useNavigate } from "react-router-dom";
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { CircularProgress, Container, Box } from "@mui/material";
+import { useParams, useNavigate } from "react-router-dom";
+import { db } from "../../firebase/config";
 
 const ItemListContainer = () => {
 
@@ -13,39 +15,41 @@ const ItemListContainer = () => {
     const navigate = useNavigate()
     useEffect(() => {
         setLoading(true)
-        PedirDatos()
-            .then((data) => {
-                if (!categoryId) {
-                    setProductos(data)
-                }
-                else {
-                    let items = data.filter((item) => item.category === categoryId)
-                  
-                    if(items.length >0){
-                        setProductos(items)
-                    }
-                    else{
-                        console.log("no existe categoria")
-                     navigate(-1)
-                    }
-                    
-                    
-                }
 
+        const productosRef = collection(db, "productos")
+        const ref = categoryId
+            ? query(productosRef, where("category", "==", categoryId))
+            : productosRef
+
+
+        getDocs(ref)
+            .then((res) => {
+                const docs = res.docs.map((doc) => {
+                    return {
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                })
+                if(docs.length > 0) {
+                    setProductos(docs)
+                }
+                else{
+                    navigate(-1)
+                }
             })
-            .catch((err) => console.log(err))
+            .catch(e => console.log(e))
             .finally(() => setLoading(false))
     }, [categoryId])
     return (
         <section id="productos">
-            <Container maxWidth="xl" mt={100}>
+            <Container  maxWidth="xl" mt={100} sx={{minHeight:"800px"}}>
                 {
-                    loading 
-                    ? 
-                    <Box sx={{ display: 'flex',justifyContent:'center'}}>
-                        <CircularProgress />
-                    </Box>
-                    : <ItemList items={productos} />
+                    loading
+                        ?
+                        <Box sx={{ display: 'flex', justifyContent: 'center',alignItems:"center" }}>
+                            <CircularProgress />
+                        </Box>
+                        : <ItemList items={productos} />
                 }
 
             </Container>
