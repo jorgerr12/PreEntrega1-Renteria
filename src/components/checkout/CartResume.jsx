@@ -8,15 +8,15 @@ const CartResume = () => {
 
     const { cart, totalCart } = useContext(CartContext)
 
-
+    const SubTotal = totalCart()
     return (
         <Box>
-            <Grid>
+            <Grid container sx={{ alignItems: "center" }}>
+                <Avatar sx={{ bgcolor: deepOrange[500], marginRight: "10px" }}
+                    alt="Remy Sharp">
+                    2
+                </Avatar>
                 <Typography>
-                    <Avatar sx={{ bgcolor: deepOrange[500] }}
-                        alt="Remy Sharp">
-                        2
-                    </Avatar>
                     RESUMEN DE PEDIDO
                 </Typography>
             </Grid>
@@ -40,13 +40,27 @@ const CartResume = () => {
                                     <TableCell>{item.cantidad}</TableCell>
                                     <TableCell>S/ {item.cantidad * item.precio}</TableCell>
                                 </TableRow>
-                            )
-                            )
-                        }
 
+                            )
+                            )
+
+                        }
+                        <TableRow key={"subTotal"}>
+                            <TableCell></TableCell>
+                            <TableCell></TableCell>
+                            <TableCell>Sub Total:</TableCell>
+                            <TableCell>S/{SubTotal}</TableCell>
+                        </TableRow>
+                        <TableRow key={"subTotal"}>
+                            <TableCell></TableCell>
+                            <TableCell></TableCell>
+                            <TableCell>Envio:</TableCell>
+                            <TableCell>S/0</TableCell>
+                        </TableRow>
                     </TableBody>
                 </Table>
             </TableContainer>
+            <Typography variant="h5" color="red" sx={{float:"right"}}>TOTAL A PAGAR: S/ {SubTotal}</Typography>
         </Box>
     )
 }

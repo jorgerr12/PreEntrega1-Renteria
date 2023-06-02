@@ -8,12 +8,13 @@ const FormClient = () => {
 
     return (
         <Box>
-            <Grid container>
-                <Typography sx={{display:"flex"}}>
-                    <Avatar sx={{ bgcolor: deepOrange[500],marginRight:"10px",alignItems:"center"}}
-                        alt="Remy Sharp">
-                        1
-                    </Avatar>
+            <Grid container sx={{alignItems:"center"}}>
+                <Avatar sx={{ bgcolor: deepOrange[500], marginRight: "10px", alignItems: "center" }}
+                    alt="Remy Sharp">
+                    1
+                </Avatar>
+                <Typography>
+
                     INFORMACION DE FACTURACION Y ENVIO
                 </Typography>
             </Grid>
