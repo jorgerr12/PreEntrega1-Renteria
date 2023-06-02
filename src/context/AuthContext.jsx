@@ -12,14 +12,16 @@ export const AuthProvider =({children})=>{
         logged:false
     })
 
+    const [errors,setErrors] = useState(null)
+
     const signIn =(values)=>{
         signInWithEmailAndPassword(auth,values.email,values.password)
-        .catch(e=>console.log(e))
+        .catch(e => setErrors(e.message))
     }
 
     const signUp =(values)=>{
         createUserWithEmailAndPassword(auth,values.email,values.password)
-        .catch(e =>console.log(e))
+        .catch(e => setErrors(e.message))
     }
 
     const logout =()=>{
@@ -33,16 +35,19 @@ export const AuthProvider =({children})=>{
                     email:user.email,
                     logged:true
                 })
+                
             }else{
                 setUser({
                     email:null,
                     logged:false
                 })
+                
             }
         })
+        setErrors(null)
     },[])
     return(
-        <AuthContext.Provider value={{user,signIn,signUp,logout}}>
+        <AuthContext.Provider value={{user,errors,setErrors,signIn,signUp,logout}}>
             {children}
         </AuthContext.Provider>
     )

@@ -1,12 +1,12 @@
-import { Avatar, Box, Button, Container, Grid, TextField, Typography } from "@mui/material"
+import { Alert, Avatar, Box, Button, Container, Grid, TextField, Typography } from "@mui/material"
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { Link } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 
 const RegisterScreen = () => {
-    const {signUp} = useContext(AuthContext)
+    const {signUp,errors,setErrors} = useContext(AuthContext)
     const [values,setValues] =useState({
         email:'',
         password:''
@@ -22,7 +22,9 @@ const RegisterScreen = () => {
         event.preventDefault();
        signUp(values)
       };
-
+    useEffect(()=>{
+        setErrors(null)
+    },[])
     return (
         <Container component="main" maxWidth="xs">
             <Box
@@ -40,6 +42,7 @@ const RegisterScreen = () => {
                     Registrarse
                 </Typography>
                 <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+                    {errors && <Alert severity="error">{errors}</Alert>}
                     <TextField
                         value={values.email}
                         margin="normal"

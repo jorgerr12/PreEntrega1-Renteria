@@ -16,6 +16,9 @@ const ProfileWidget = () => {
         setAnchorEl(null);
 
     };
+    const handleClose = () => {
+        setAnchorEl(null);
+      };
     
     return (
         <div>
@@ -42,6 +45,7 @@ const ProfileWidget = () => {
                     horizontal: 'right',
                 }}
                 open={Boolean(anchorEl)}
+                onClose={handleClose}
                
             >
 

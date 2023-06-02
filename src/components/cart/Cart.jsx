@@ -67,9 +67,9 @@ const Cart = () => {
                                 <Box p={2} textAlign="center">
                                 <Typography variant="h5" color="red">TOTAL A PAGAR: S/ {total}</Typography>
                                 <Box mt={3}>
-                                    <Link to="/" className="btn btn-primary">
+                                    <Link to="/checkout" className="btn btn-primary">
                                         <Button color="success" variant="contained" size="large" sx={{width:"80%"}} >
-                                           COMPRAR
+                                           CONFIRMAR PEDIDO
                                         </Button>
 
                                     </Link>

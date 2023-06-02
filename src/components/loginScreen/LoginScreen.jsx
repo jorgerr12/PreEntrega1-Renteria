@@ -1,12 +1,12 @@
-import { Avatar, Box, Button, Container, Grid, TextField, Typography } from "@mui/material"
+import { Alert, Avatar, Box, Button, Container, Grid, TextField, Typography } from "@mui/material"
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { Link } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 
 const LoginScreen = () => {
-    const {signIn} = useContext(AuthContext)
+    const {signIn,errors,setErrors} = useContext(AuthContext)
     const [values,setValues]= useState({
         email:'',
         password:''
@@ -21,7 +21,9 @@ const LoginScreen = () => {
         event.preventDefault();
         signIn(values)
       };
-
+      useEffect(()=>{
+        setErrors(null)
+    },[])
     return (
         <Container component="main" maxWidth="xs">
             <Box
@@ -39,6 +41,7 @@ const LoginScreen = () => {
                     Iniciar Sesion
                 </Typography>
                 <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+                {errors && <Alert severity="error">{errors}</Alert>}
                     <TextField
                         margin="normal"
                         required
