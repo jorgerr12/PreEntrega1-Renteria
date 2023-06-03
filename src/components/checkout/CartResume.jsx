@@ -51,7 +51,7 @@ const CartResume = () => {
                             <TableCell>Sub Total:</TableCell>
                             <TableCell>S/{SubTotal}</TableCell>
                         </TableRow>
-                        <TableRow key={"subTotal"}>
+                        <TableRow key={"envio"}>
                             <TableCell></TableCell>
                             <TableCell></TableCell>
                             <TableCell>Envio:</TableCell>
@@ -60,7 +60,7 @@ const CartResume = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <Typography variant="h5" color="red" sx={{float:"right"}}>TOTAL A PAGAR: S/ {SubTotal}</Typography>
+            <Typography variant="h5" color="red" sx={{float:"right",marginTop:"10px"}}>TOTAL A PAGAR: S/ {SubTotal}</Typography>
         </Box>
     )
 }

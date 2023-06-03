@@ -1,5 +1,5 @@
 import { AccountCircle } from "@mui/icons-material"
-import { IconButton, Menu, MenuItem, Typography } from "@mui/material"
+import { Box, IconButton, Menu, MenuItem, Typography } from "@mui/material"
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
@@ -21,7 +21,7 @@ const ProfileWidget = () => {
       };
     
     return (
-        <div>
+        <Box sx={{display:"flex",alignItems:"center"}}>
             <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -52,7 +52,7 @@ const ProfileWidget = () => {
                 <MenuItem onClick={handleLogout}>logout</MenuItem>
             </Menu>
             <Typography>{user.email}</Typography>
-        </div>
+        </Box>
     )
 }
 
